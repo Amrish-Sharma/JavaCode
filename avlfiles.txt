@@ -1,0 +1,65 @@
+POST https://gateway-b2b.axwaycloud.de:8443/exchange/FESTOCXML HTTP/1.1
+SAP_MplCorrelationId: AF8RLqKQV1UZ30eGQbuu7VoJIzVZ
+SAP_Receiver: AN01000056711-T
+anCorrelationID: AF8RLqLIiE9uW0uiB6gRuG7csWGB
+anSURPayloadID: 
+anReceiverID: AN01000056711-T
+User-Agent: AHC/1.0
+anInfiniteErrorMessage: Transaction Failed due to infinite retry
+anDocumentID: 85640097
+SAP_Sender: AN01400949147-T
+Authorization: Basic YXZsX3Rlc3Q6RmVzdG8kNTEy
+anTrgProtocol: HTTPS
+SAP_MessageProcessingLogID: AF8RLqIrsMcd7jd8bVo0PMbJkAHO
+anPrivateKeyAlias: hcicertificate
+anTransportMode: DEFAULT
+SAP_ApplicationID: 85640097
+anTrgURL: https://gateway-b2b.axwaycloud.de:8443/exchange/FESTOCXML
+Content-Type: text/xml; charset=UTF-8
+Transfer-Encoding: chunked
+SAP_PregeneratedMplId: AF8RLqJQOnOlIP9s5UZitjYcxfnt
+Accept: */*
+anSenderID: AN01400949147-T
+anSourceDocumentVersion: 1.2.035
+Connection: keep-alive
+anSourceDocumentStandard: cXML
+Host: gateway-b2b.axwaycloud.de:8443
+anConOwnerID: AN01000056711-T
+SAP-PASSPORT: 2A54482A0300E600004350495F65303339370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004D657373616765526563657074696F6E00000000000000000000000000000000000000000000000000004350495F65303339370000000000000000000000000000000000000000000000366434623536303638616461343439373861656330386634666630343665383300000000166D4B56068ADA44978AEC08F4FF046E838AE755AB6E224A45B28A639626E4DF0900000001000000002A54482A
+anOriginalSourceDocumentType: OrderRequest
+anPayloadID: 00163E6F029D1EDAB1FD2B3D76D5BB53
+anDocReferenceID: 00163E6F029D1EDAB1FD2B3D76D5BB53
+anSourceDocumentType: OrderRequest
+SAP_MessageType: OrderRequest
+anSURStatusCode: 500
+anAttachmentFlag: False
+anAuthType: Basic
+anOutboundMaxRetry: 4
+anSURStatusMsg: 
+
+<?xml version="1.0" encoding="UTF-8"?><cXML payloadID="00163E6F029D1EDAB1FD2B3D76D5BB53" timestamp="2020-07-17T06:52:44+02:00" version="1.2.035"><Header><From><Credential domain="NetworkID"><Identity>AN01400949147-T</Identity></Credential><Credential domain="SystemID"><Identity>AVQCLNT001</Identity></Credential></From><To><Credential domain="NetworkId"><Identity>AN01000056711-T</Identity></Credential></To><Sender><Credential domain="NetworkID"><Identity>AN01000000001</Identity></Credential><UserAgent>ARBERP/SAP_APPL/618/0013</UserAgent></Sender></Header>
+<Request deploymentMode="test"><OrderRequest><OrderRequestHeader orderDate="2020-07-17T12:00:00+02:00" orderID="85640097" orderType="regular" orderVersion="1" type="new"><Total><Money currency="EUR">1464.0</Money></Total><ShipTo><Address addressIDDomain="buyerLocationID" isoCountryCode="DE"><Name xml:lang="de">AVL Emission Test Systems GmbH</Name><PostalAddress name="default"><Street>Graf-Landsberg-Straße 1c</Street><City>Neuss</City><State>05</State><PostalCode>41460</PostalCode><Country isoCountryCode="DE"/></PostalAddress></Address><IdReference domain="buyerLocationID" identifier="1553"/></ShipTo><BillTo><Address isoCountryCode="DE"><Name xml:lang="de">AVL Emission Test Systems</Name><PostalAddress name="AVL Emission Test Systems GmbH"><Street>Graf-Landsbergstrasse 1c</Street><City>Neuss</City><PostalCode>41460</PostalCode><Country isoCountryCode="DE"/></PostalAddress></Address><IdReference domain="buyerID" identifier="0155"/></BillTo><PaymentTerm payInNumberOfDays="30"><Discount><DiscountPercent percent="3.000"/></Discount></PaymentTerm><PaymentTerm payInNumberOfDays="90"><Discount><DiscountPercent percent="0.000"/></Discount></PaymentTerm><Contact addressIDDomain="buyerID" role="supplierCorporate"><Name xml:lang="de">Festo Vertrieb GmbH &amp; Co. KG</Name><PostalAddress><Street>Sperberweg 16A</Street><City>Neuss</City><PostalCode>41468</PostalCode><Country isoCountryCode="DE"/></PostalAddress><Email name="default">vb_rheinland@festo.com</Email><Phone><TelephoneNumber><CountryCode isoCountryCode="DE">49</CountryCode><AreaOrCityCode/><Number>2131 74028-5914</Number></TelephoneNumber></Phone><Fax><TelephoneNumber><CountryCode isoCountryCode="DE">49</CountryCode><AreaOrCityCode/><Number>711 347 5410532</Number></TelephoneNumber></Fax><IdReference domain="buyerID" identifier="24006"/></Contact><Contact role="purchasingAgent"><Name xml:lang="de">Heiko Brozio</Name><Email>heiko.brozio@avl.com</Email><Phone><TelephoneNumber><CountryCode isoCountryCode="DE"/><AreaOrCityCode/><Number>+4921315124319</Number></TelephoneNumber></Phone><Fax><TelephoneNumber><CountryCode isoCountryCode="DE"/><AreaOrCityCode/><Number>+4921315124128</Number></TelephoneNumber></Fax></Contact><Comments xml:lang="de">Kopftext
+
+***********************************************************************Bitte hier schnellstmöglich liefern ! sehr eilig !
+Bitte beachten das hier 20 m Rollen geliefert werden müssen da sonst zu viele Reste verschrottet werden müssen.
+Bitte dies immer so auch in der AB bestätigen!
+Sollte es hier noch Unklarheiten geben bitte an den Einkauf wenden.
+***********************************************************************
+
+</Comments><TermsOfDelivery><TermsOfDeliveryCode value="TransportCondition"/><ShippingPaymentMethod value="Other"/><TransportTerms value="DAP">Geliefert benannter Ort</TransportTerms><Address><Name xml:lang="de">Neuss/Gaggenau</Name></Address></TermsOfDelivery><Extrinsic name="incoTermDesc">Geliefert benannter Ort</Extrinsic><Extrinsic name="incoTerm">DAP</Extrinsic><Extrinsic name="incoTermLocation">Neuss/Gaggenau</Extrinsic><Extrinsic name="buyerVatID">DE811144143</Extrinsic><Extrinsic name="supplierVatID">DE815618179</Extrinsic></OrderRequestHeader>
+<ItemOut lineNumber="10" quantity="1200.0" requestedDeliveryDate="2020-07-24T12:00:00+02:00"><ItemID><SupplierPartID>525443</SupplierPartID><BuyerPartID>SS0660</BuyerPartID></ItemID><ItemDetail><UnitPrice><Money currency="EUR">1.22</Money></UnitPrice><Description xml:lang="de">SCHLAUCH-PUN-V0 8,0X1,25 BLAU- UL</Description><UnitOfMeasure>MTR</UnitOfMeasure><PriceBasisQuantity conversionFactor="1" quantity="1.0"><UnitOfMeasure>MTR</UnitOfMeasure></PriceBasisQuantity><Classification domain="not available">Schlauch (o. Anschl)</Classification><Extrinsic name="extLineNumber">10</Extrinsic><Extrinsic name="Forecast Data"/></ItemDetail><TermsOfDelivery><TermsOfDeliveryCode value="TransportCondition"/><ShippingPaymentMethod value="Other"/><TransportTerms value="DDP">Geliefert verzollt</TransportTerms><Address><Name xml:lang="de">Neuss</Name></Address></TermsOfDelivery><Comments xml:lang="de">Materialbestelltext
+
+eCl@ss: 37-11-01-90 Schlauch (ohne Anschluss, nicht spezifiziert)
+FESTO; 525443
+Angebot: 2200761012
+Anlieferung in 20 m - Rollen!
+Artikelbezeichnung: PUN-V0-8x1,25-BL
+RoHS Nachweis der Konformität: Ja
+min. Betriebstemperatur: -35.0 [°C]
+Innendurchmesser des Schlauches: 5.5 [mm]
+Farbe: blau
+Werkstoffbezeichnung des Schlauches: PUN-V0
+max. Betriebstemperatur: 60.0 [°C]
+Wanddicke: 1.25 [mm]
+
+</Comments><ControlKeys><OCInstruction value="allowed"><Lower><Tolerances><TimeTolerance limit="999" type="days"/></Tolerances></Lower><Upper><Tolerances><TimeTolerance limit="999" type="days"/></Tolerances></Upper></OCInstruction><ASNInstruction value="allowed"/><InvoiceInstruction value="isNotERS"/></ControlKeys><ScheduleLine lineNumber="1" quantity="1200.0" requestedDeliveryDate="2020-07-24T12:00:00+02:00"><UnitOfMeasure>MTR</UnitOfMeasure></ScheduleLine></ItemOut></OrderRequest></Request></cXML>
